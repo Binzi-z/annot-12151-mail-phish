@@ -1,0 +1,96 @@
+{
+ "vulns": [
+  {
+   "id": "v00",
+   "sink": "sql_injection",
+   "label": "SQL 注入",
+   "file": "src/svc_00.py",
+   "line": 15,
+   "entry": "load_00:raw_0",
+   "path": [
+    "load_00(raw_0)",
+    "_forward_0",
+    "sql_injection"
+   ]
+  },
+  {
+   "id": "v01",
+   "sink": "command_injection",
+   "label": "命令注入",
+   "file": "src/svc_00.py",
+   "line": 26,
+   "entry": "load_01:raw_1",
+   "path": [
+    "load_01(raw_1)",
+    "_forward_1",
+    "command_injection"
+   ]
+  },
+  {
+   "id": "v02",
+   "sink": "command_injection",
+   "label": "命令注入",
+   "file": "src/svc_02.py",
+   "line": 28,
+   "entry": "load_05:raw_5",
+   "path": [
+    "load_05(raw_5)",
+    "_forward_5",
+    "command_injection"
+   ]
+  },
+  {
+   "id": "v03",
+   "sink": "path_traversal",
+   "label": "路径穿越",
+   "file": "src/svc_03.py",
+   "line": 14,
+   "entry": "load_06:raw_6",
+   "path": [
+    "load_06(raw_6)",
+    "_forward_6",
+    "path_traversal"
+   ]
+  },
+  {
+   "id": "v04",
+   "sink": "command_injection",
+   "label": "命令注入",
+   "file": "src/svc_04.py",
+   "line": 28,
+   "entry": "load_09:raw_9",
+   "path": [
+    "load_09(raw_9)",
+    "_forward_9",
+    "command_injection"
+   ]
+  },
+  {
+   "id": "v05",
+   "sink": "path_traversal",
+   "label": "路径穿越",
+   "file": "src/svc_05.py",
+   "line": 14,
+   "entry": "load_10:raw_10",
+   "path": [
+    "load_10(raw_10)",
+    "_forward_10",
+    "path_traversal"
+   ]
+  },
+  {
+   "id": "v06",
+   "sink": "ssrf",
+   "label": "SSRF",
+   "file": "src/svc_05.py",
+   "line": 25,
+   "entry": "load_11:raw_11",
+   "path": [
+    "load_11(raw_11)",
+    "_forward_11",
+    "ssrf"
+   ]
+  }
+ ],
+ "total": 7
+}

@@ -1,0 +1,9 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# 增量分析缓存与回放/扫描产物
+.incremental-cache/
+**/.cache-c/
+**/.cache-f/
+*.sarif

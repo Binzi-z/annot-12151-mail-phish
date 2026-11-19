@@ -1,0 +1,13 @@
+# 12151 · 运单服务的增量分析缓存 —— Python 依赖声明
+#
+# 运行时依赖：无。
+# app.py / eval.py / baseline/scan.py / incremental/** 只 import Python 标准库：
+#   argparse、ast、copy、dataclasses、hashlib、json、os、re、shutil、sqlite3、
+#   sys、tempfile、typing、urllib.request
+# 被扫描的语料是仓库自带的 src/*.py，分析器只做 AST 解析，不 import、不执行被扫描代码。
+# 版本下限 Python 3.9（incremental/ 里用了内建的 dict[...] 泛型标注与 from __future__ import annotations）。
+#
+# 测试依赖：仅 pytest 一个包，跑测试用
+#   python -m pytest -q
+# tests/ 里的用例同样只 import 标准库，pytest 只是运行器。
+pytest>=7.0
